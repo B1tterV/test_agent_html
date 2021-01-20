@@ -466,7 +466,7 @@ header {
   color: white; }
 
 .parallax > use {
-  animation: move-forever 12s linear infinite; }
+  animation: move-forever 6s linear infinite; }
   .parallax > use:nth-child(1) {
     animation-delay: -2s; }
   .parallax > use:nth-child(2) {
