@@ -466,7 +466,7 @@ header {
   color: white; }
 
 .parallax > use {
-  animation: move-forever 12s linear infinite; }
+  animation: move-forever 6s linear infinite; }
   .parallax > use:nth-child(1) {
     animation-delay: -2s; }
   .parallax > use:nth-child(2) {
@@ -668,8 +668,12 @@ footer {
     justify-content: center; }
   .header__social-networks {
     text-align: center; }
+  .footer__social-networks {
+    text-align: center; }
   .social-network-items {
     justify-content: center; }
+  .footer__join-us {
+    text-align: center; }
   .main {
     text-align: center;
     margin-top: 100px; }
@@ -678,7 +682,7 @@ footer {
   .footer__island-guide {
     right: 10px; }
   .footer__message-halper {
-    right: 0; } }
+    display: none; } }
 
 @media (max-width: 768px) {
   .wrapper {
@@ -707,8 +711,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 10px; }
-  .footer__message-halper {
-    display: none; }
   .footer-pay-methods {
     margin-top: 50px; }
   .footer-download-img {
@@ -796,7 +798,8 @@ footer {
     opacity: 1; }
 
 #burgerModal {
-  display: none; }
+  display: none;
+  overflow: hidden; }
 
 .burger__content {
   position: fixed;
