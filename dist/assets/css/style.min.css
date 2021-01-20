@@ -787,7 +787,8 @@ footer {
   top: 20px;
   right: 19px;
   opacity: 0.5;
-  transition: transform .2s linear, opacity .2s linear; }
+  transition: transform .2s linear,
+ opacity .2s linear; }
   .modal__close img {
     width: 1.5rem;
     height: 1.5rem; }
@@ -796,7 +797,8 @@ footer {
     opacity: 1; }
 
 #burgerModal {
-  display: none; }
+  display: none; 
+  overflow: hidden; }
 
 .burger__content {
   position: fixed;
