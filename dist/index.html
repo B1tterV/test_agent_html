@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/fonts/Gilroy/stylesheet.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>vidod | Booking details</title>
+</head>
+<body>
+
+    <div class="page">
+        <header class="header">
+          <div class="wrapper">
+            <div class="header__main">
+              <img class="logo" src="assets/images/svg/logo.svg">
+              <div class="header__region">
+                <div class="place header__region-item">
+                  <img src="assets/images/svg/island.svg" alt="">
+                  <p>Lanzarote</p>
+                </div>
+                <div class="lang header__region-item">
+                  <img src="assets/images/svg/english.svg" alt="">
+                  <p>EN</p>
+                </div>
+                <div class="lang header__region-item">
+                  <img src="assets/images/svg/price.svg" alt="">
+                  <p>EUR</p>
+                </div>
+              </div>
+              <nav>
+                <ul class="header__menu">
+                  <li class="header__menu-item">
+                    <img src="assets/images/svg/home.svg" alt="">
+                    <a class="header__menu-link" href="javascript:;">Catalog</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <img src="assets/images/svg/help.svg" alt="">
+                    <a class="header__menu-link" href="javascript:;">Help</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <img src="assets/images/svg/wishlist.svg" alt="">
+                    <a class="header__menu-link active" href="javascript:;">Wishlist</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <img src="assets/images/svg/cart.svg" alt="">
+                    <a class="header__menu-link" href="javascript:;">Cart</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <img src="assets/images/svg/account.svg" alt="">
+                    <a class="header__menu-link" href="javascript:;">Account</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        
+        <div class="mob-header">
+          <div class="mob-menu" id="burgerPop">
+          </div>
+          <a href="/" class="mob-title">
+            <img src="../assets/images/svg/logo.svg" alt="">
+          </a>
+          <div class="header__region">
+            <div class="place header__region-item">
+              <img src="assets/images/svg/island.svg" alt="">
+              <p>Lanzarote</p>
+            </div>
+            <div class="lang header__region-item">
+              <img src="assets/images/svg/english.svg" alt="">
+              <p>EN</p>
+            </div>
+            <div class="lang header__region-item">
+              <img src="assets/images/svg/price.svg" alt="">
+              <p>EUR</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal" id="burgerModal" style="display: block;">
+          <div class="burger__content">
+            <img class="logo" src="assets/images/svg/logo.svg">
+            <nav>
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/home.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Catalog</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/help.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Help</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/wishlist.svg" alt="">
+                  <a class="header__menu-link active" href="javascript:;">Wishlist</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/cart.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Cart</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/account.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Account</a>
+                </li>
+              </ul>
+            </nav>
+        
+            <div class="header__social-networks">
+              <p class="subtitle-text">Share with friends</p>
+              <div class="social-network-items">
+                  <a href="javascript:;" class="social-network-item">
+                      <div>
+                          <img src="assets/images/svg/facebook.svg" alt="">
+                      </div>
+                  </a>
+                  <a href="javascript:;" class="social-network-item">
+                      <div>
+                          <img src="assets/images/svg/twitter.svg" alt="">
+                      </div>
+                  </a>
+                  <a href="javascript:;" class="social-network-item">
+                      <div>
+                          <img src="assets/images/svg/google.svg" alt="">
+                      </div>
+                  </a>
+              </div>
+          </div>
+        
+          <div class="header__join-us">
+            <p class="subtitle-text">Join us</p>
+            <div class="join-us-items">
+                <a href="" class="join-us-item">
+                    <img src="assets/images/svg/facebook-dark.svg" alt="">
+                </a>
+                <a href="" class="join-us-item">
+                    <img src="assets/images/svg/twitter-dark.svg" alt="">
+                </a>
+            </div>
+          </div>
+        
+          <div class="header__message-halper">
+            <a href="javascript:;"><img src="assets/images/svg/halper-message.svg" alt=""></a>
+          </div>
+        
+          </div>
+          <button class="burger__close modal__close" type="button">
+              <img src="assets/images/svg/burger-close.png" alt="Закрыть">
+          </button>
+        </div>
+
+        
+        <main class="main">
+            <div class="wrapper">
+              <div class="back-to-page text-min">
+                <p><a href="javascript:;">Catalog</a> > Wishlist</p>
+              </div>
+              <div class="page-title"><h1>Wishlist</h1></div>
+              <div class="item__content">
+                <h2>Events</h2>
+                <div class="cards events__cards">
+                  <div class="card">
+                      <img src="assets/images/card1.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like like-active">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes outdoor-classes">
+                                  <p class="text-min">Outdoor Classes</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.1</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.5</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Catamaran Cruise to Papagayo Beaches</h3>
+                              <p class="card__content-text">
+                                  Cruise to the Papagayo Beaches on a 
+                                  sailing catamaran. Enjoy a free lunch, 
+                                  an unlimited bar and... 
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before">from</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money">
+                                  <h3>30,00 €</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/images/card2.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like like-active">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card-special card-special-offer">
+                          <p class="text-min">Special offer</p>
+                      </div>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes sailing-tours">
+                                  <p class="text-min">Sailing Tours</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.2</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.4</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Adult-only sailing trip to Papagayo with lunch</h3>
+                              <p class="card__content-text">
+                                  Hop on a luxury catamaran cruise and 
+                                  sail along the coast of La Graciosa with a fresh ...
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before discount-before">22,50 €</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money money-discount">
+                                  <h3>15,50 €</h3>
+                              </div>
+                          </div>
+                          <p class="text-min card-money-after">savings 7,00 €</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/images/card3.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like like-active">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card-special card-special-available">
+                          <p class="text-min">Available from Nov 3</p>
+                      </div>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes sightseeing-tours">
+                                  <p class="text-min">Sightseeing Tours</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.5</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.6</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Volcanoes and Caves: Full-Day Tour of Lanzarote</h3>
+                              <p class="card__content-text">
+                                  Discover the highlights in the south and the 
+                                  north of Lanzarote on this full-day tour. See volcanoes...
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before">from</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money">
+                                  <h3>50,00 €</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/images/card4.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes extrime-activity">
+                                  <p class="text-min">Extrime activity</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.7</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.5</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Paragliding Discovery Flight with Video</h3>
+                              <p class="card__content-text">
+                                  Discover Lanzarote's volcanic landscapes 
+                                  from the sky together with a professional paragliding...
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before">from</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money">
+                                  <h3>95,00 €</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item__content">
+                <h2>Tours</h2>
+                <div class="cards events__cards">
+                  <div class="card">
+                      <img src="assets/images/card2.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like like-active">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card-special card-special-offer">
+                          <p class="text-min">Special offer</p>
+                      </div>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes sailing-tours">
+                                  <p class="text-min">Sailing Tours</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.2</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.4</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Adult-only sailing trip to Papagayo with lunch</h3>
+                              <p class="card__content-text">
+                                  Hop on a luxury catamaran cruise and 
+                                  sail along the coast of La Graciosa with a fresh ...
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before discount-before">22,50 €</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money money-discount">
+                                  <h3>15,50 €</h3>
+                              </div>
+                          </div>
+                          <p class="text-min card-money-after">savings 7,00 €</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/images/card3.png" alt="" class="card-img">
+                      <a href="javascript:;" class="card-like like-active">
+                          <img src="assets/images/svg/heart.svg" alt="">
+                      </a>
+                      <div class="card-special card-special-available">
+                          <p class="text-min">Available from Nov 3</p>
+                      </div>
+                      <div class="card__content">
+                          <div class="card__content-top">
+                              <div class="card__content-classes sightseeing-tours">
+                                  <p class="text-min">Sightseeing Tours</p>
+                              </div>
+                              <div class="card__content-raings">
+                                  <div class="card__content-raitng">
+                                      <img src="assets/images/svg/raiting1.svg" alt="">
+                                      <p class="text-min">4.5</p>
+                                  </div>
+                                  <div class="card__content-raitng card__content-raitng2">
+                                      <img src="assets/images/svg/raiting2.svg" alt="">
+                                      <p class="text-min">4.6</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="text">
+                              <h3>Volcanoes and Caves: Full-Day Tour of Lanzarote</h3>
+                              <p class="card__content-text">
+                                  Discover the highlights in the south and the 
+                                  north of Lanzarote on this full-day tour. See volcanoes...
+                              </p>
+                          </div>
+                          <p class="text-min card-money-before">from</p>
+                          <div class="card__content-bottom">
+                              <div class="card__content-img">
+                                  <img src="assets/images/svg/time.svg" alt="">
+                                  <img src="assets/images/svg/pickup.svg" alt="">
+                                  <img src="assets/images/svg/covid.svg" alt="">
+                              </div>
+                              <div class="card__content-money">
+                                  <h3>50,00 €</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-wave">
+                <svg class="editorial"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none">
+                <defs>
+                <path id="gentle-wave"
+                d="M-160 44c30 0 
+                    58-18 88-18s
+                    58 18 88 18 
+                    58-18 88-18 
+                    58 18 88 18
+                    v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#D5EFFB"/>  
+                </g>
+                </svg>
+            </div>
+            <div class="footer__content">
+                <div class="wrapper">
+                    <div class="footer__main">
+                        <div class="row">
+                            <div class="col footer-clients">
+                                <h2>For clients</h2>
+                                <a href="javascript:;" class="for-client">Support</a>
+                                <a href="javascript:;" class="for-client">Contacts</a>
+                                <a href="javascript:;" class="for-client">Legal information</a>
+                                <a href="javascript:;" class="for-client">About Us</a>
+                            </div>
+                            <div class="col">
+                                <div class="footer-pay-methods">
+                                    <h2>Payment Methods</h2>
+                                    <div class="footer-pay-row">
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/visa.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/masterCard.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/maestro.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="footer-pay-row">
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/sofort.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/jsb.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/american-express.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="footer-pay-row">
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/pay-pal.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/visa.svg" alt="">
+                                        </div>
+                                        <div class="pay-method">
+                                            <img src="assets/images/svg/gpay.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col footer-download">
+                                <div class="footer-download-img">
+                                    <img src="assets/images/svg/download-appStore.svg" alt="">
+                                    <img src="assets/images/svg/download-google.svg" alt="">
+                                </div>
+                                <div class="footer__social-networks">
+                                    <p class="subtitle-text">Share with friends</p>
+                                    <div class="social-network-items">
+                                        <a href="javascript:;" class="social-network-item">
+                                            <div>
+                                                <img src="assets/images/svg/facebook.svg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="social-network-item">
+                                            <div>
+                                                <img src="assets/images/svg/twitter.svg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="social-network-item">
+                                            <div>
+                                                <img src="assets/images/svg/google.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer__join-us">
+                                    <p class="subtitle-text">Join us</p>
+                                    <div class="join-us-items">
+                                        <a href="" class="join-us-item">
+                                            <img src="assets/images/svg/facebook-dark.svg" alt="">
+                                        </a>
+                                        <a href="" class="join-us-item">
+                                            <img src="assets/images/svg/twitter-dark.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_copy">
+                    <div class="footer__island-guide">
+                        <p>Island guide</p>
+                        <img src="assets/images/svg/islandGuide.svg" alt="">
+                    </div>
+                    <p class="copyright">© 2020, Vidodo Guide LLP | <a href="javascript:;">Our policy and terms</a></p>
+                </div>
+            </div>
+            <div class="footer__message-halper">
+                <a href="javascript:;"><img src="assets/images/svg/halper-message.svg" alt=""></a>
+            </div>
+        </footer>    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
