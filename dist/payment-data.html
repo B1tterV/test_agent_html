@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/fonts/Gilroy/stylesheet.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Vido | Reset password</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+          <div class="header__main">
+            <img class="logo" src="assets/images/svg/logo.svg">
+            <div class="header__region">
+              <div class="place header__region-item">
+                <img src="assets/images/svg/island.svg" alt="">
+                <p>Lanzarote</p>
+              </div>
+              <div class="lang header__region-item">
+                <img src="assets/images/svg/english.svg" alt="">
+                <p>EN</p>
+              </div>
+              <div class="lang header__region-item">
+                <img src="assets/images/svg/price.svg" alt="">
+                <p>EUR</p>
+              </div>
+            </div>
+            <nav>
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/home.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Catalog</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/help.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Help</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/wishlist.svg" alt="">
+                  <a class="header__menu-link active" href="javascript:;">Wishlist</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/cart.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Cart</a>
+                </li>
+                <li class="header__menu-item">
+                  <img src="assets/images/svg/account.svg" alt="">
+                  <a class="header__menu-link" href="javascript:;">Account</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+      
+    
+    <main class="main">
+        <div class="container main__page">
+            <p class="page-back"><a href="#">Catalog</a> > Payment method</p>
+            <div class="page-title">Платежные данные</div>
+            <div class="row">
+                <div class="page__data-main-content">
+                    <div class="payments-data">
+                        <p class="rquired">* Required fields</p>
+                        <form id="paymentsForm" action="main.php" method="post">
+                            <div class="input-block pay-input-block">
+                                <input type="text" name="payData" id="FirstName" class="pay-input ok" required>
+                                <label for="FirstName">First name *</label>
+                            </div>
+                            <div class="input-block pay-input-block">
+                                <input type="text" name="payData" id="LastName" class="pay-input ok" required>
+                                <label for="LastName">Last name *</label>
+                            </div>
+                            <div class="input-block pay-input-block">
+                                <input type="text" name="payData" id="Email" class="pay-input ok">
+                                <label for="Email">Email</label>
+                            </div>
+                            <p class="input-halper-text">Confirmation and tickets will be sent to mail@gmail.com</p>
+                            <div class="input-block pay-input-block">
+                                <input type="text" name="payData" id="ConfirmEmail" class="pay-input ok">
+                                <label for="ConfirmEmail">Confirm email</label>
+                            </div>
+                            <div class="select select-country" id="country">
+                                <label for="country">Сountry *</label>
+                            </div>
+                            <div class="input-block pay-input-block">
+                                <input type="text" name="payData" id="phone" class="pay-input ok" required>
+                                <label for="phone">Mobile phone *</label>
+                            </div>
+                            <p class="input-halper-text">
+                                We will contact you in case of important notifications or changes.
+                                Required by the supplier
+                            </p>
+                            <div class="optional">
+                                <p>Optional</p>
+                                <div class="input-optional" contenteditable="true">
+                                    For example dietary needs
+                                </div>
+                            </div>
+                            <div class="receive-text">
+                                <input type="checkbox" name="payData" id="receiveText">
+                                <label for="receiveText">Receive text message updates about your booking. Message rates may apply.</label>
+                            </div>
+                            <div class="traveler__details">
+                                <p class="title-min">Traveler details</p>
+                                <input type="checkbox" name="payData" id="SameBillingDetails">
+                                <label for="SameBillingDetails">Same as billing details</label>
+                            </div>
+                            <div class="info__requested">
+                                <p class="title-min">Information requested by the local partner</p>
+                                <div class="subtitle-min">
+                                    Please enter your pickup address. The shaded area shows <br> 
+                                    the local partner’s designated pickup area.
+                                </div>
+                                <div class="info__requested-content warning-text">
+                                    <p>
+                                        <span>With transfer. </span>Pickup will be at your hotel 
+                                        reception or the nearest bus stop. 
+                                        Please provide the name and address of the hotel. 
+                                        The local supplier will then send you an email 
+                                        with the exact pickup location and time.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="select__location">
+                                <p class="title-min">La Graciosa Day trip to Fuerteventura and Corralejo</p>
+                                <div class="text">Select where you’d like to be picked up from</div>
+                                <div class="select__location-input">Hotel The Ocean</div>
+                                <div class="select__location-map">
+                                    <img src="assets/images/map2.png" alt="">
+                                </div>
+                                <div class="select__location-check">
+                                    <input type="checkbox" name="payData" id="SelectLocation">
+                                    <label for="SelectLocation">I will select my pickup location later</label>
+                                </div>
+                            </div>
+                            <div class="hotel__adress">
+                                <p class="title-min">Grand Tour Lanzarote</p>
+                                <div class="subtitle-min">
+                                    Select where you’d like to be picked up from
+                                </div>
+                                <input type="text" name="payData" id="" placeholder="Enter your adress or hotel name">
+                                <div class="hotel__adress-check">
+                                    <input type="checkbox" name="payData" id="SelectLocation">
+                                    <label for="SelectLocation">I will select my pickup location later</label>
+                                </div>
+                            </div>
+                            <div class="select__payment">
+                                <p class="title-min">Select payment method</p>
+                                <p class="encryption">We use SSL encryption to keep your data secure</p>
+                                <div class="select__payment-pay">
+                                    <div class="pay-input">
+                                        <input type="radio" name="payData" id="VisaPay">
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/visa.svg" alt="">
+                                        </div>
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/master-card.svg" alt="">
+                                        </div>
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/maestro.svg" alt="">
+                                        </div>
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/jcb.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="pay-input">
+                                        <input type="radio" name="payData" id="payPalPay">
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/pay-pal.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="pay-input">
+                                        <input type="radio" name="payData" id="sofortPay">
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/sofort.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="pay-input">
+                                        <input type="radio" name="payData" id="sofortPay">
+                                        <div class="pay-card">
+                                            <img src="assets/images/svg/google-pay.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="submit-pay" type="submit">Перейти к оплате</button>
+                        </form>
+                        <p class="general-terms">
+                            By proceeding, you confirm that you accept our 
+                            <a href="#">General Terms and Conditions.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="page__data-second-content">
+                    <div class="page-data-container">
+                        <div class="total__items">
+                            <p class="total-text">Total (3 items):</p>
+                            <div class="total__items-sum">
+                                <p class="sum">340,00 € </p>
+                                <p class="text">
+                                    No additional fees
+                                    <br>
+                                    and commissions
+                                </p>
+                            </div>
+                            <div class="total__items-content">
+                                <div class="total__items-item">
+                                    <div class="total__items-card">
+                                        <div class="card-img">
+                                            <img src="assets/images/total-card.png" alt="">
+                                            <div class="offer">
+                                                Special offer
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="ticket">Entrance ticket</div>
+                                            <div class="card-content-price">155,00 €</div>
+                                            <div class="card-title">
+                                                La Graciosa Day trip to Fuerteventura and Corralejo
+                                            </div>
+                                            <div class="card-time">
+                                                August 21, 2021, 11:00-17:00
+                                            </div>
+                                            <div class="card-people">
+                                                1 Adult, 2 Senior, 1 Youth, 2 Child, 1 Infant
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cancelation">
+                                        <a href="javascript:;">
+                                            <div class="free-cancel-btn">
+                                                Free cancelation
+                                            </div>
+                                        </a>
+                                        <div class="text">
+                                            Cancel your reservation by 11:00 
+                                            August 20to receive a full refund.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total__items-item">
+                                    <div class="total__items-card">
+                                        <div class="card-img">
+                                            <img src="assets/images/total-card2.png" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="ticket">Entrance ticket</div>
+                                            <div class="card-content-price">90,00 €</div>
+                                            <div class="card-title">
+                                                La Graciosa Day trip to Fuerteventura and Corralejo
+                                            </div>
+                                            <div class="card-time">
+                                                August 21, 2021, 11:00-17:00
+                                            </div>
+                                            <div class="card-people">
+                                                1 Adult, 2 Senior, 1 Youth, 2 Child, 1 Infant
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cancelation">
+                                        <a href="javascript:;">
+                                            <div class="free-cancel-btn">
+                                                Free cancelation
+                                            </div>
+                                        </a>
+                                        <div class="text">
+                                            Cancel your reservation by 11:00 
+                                            August 20to receive a full refund.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="your__gift">
+                            <div class="gift-title">
+                                <img src="assets/images/svg/gift.svg" alt="">
+                                <p>Your gift</p>
+                            </div>
+                            <div class="select gift-select">Audiobook</div>
+                            <div class="gift-text">
+                                After paying for the order, 
+                                the gift will be sent to 
+                                specified email address
+                            </div>
+                        </div>
+                        <div class="data__security">
+                            <div class="title">
+                                Data security
+                            </div>
+                            <div class="text">
+                                Your information is safe with us. 
+                                All data is encrypted and transmitted 
+                                securely using SSL.Vidodo respects your privacy. 
+                                We do not sell your data to anyone.
+                                <br>
+                                <a href="">Privacy Statement</a>
+                                <br>
+                                <br>
+                                <b>We do not store your payment details</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__inner-forclients">
+              <div class="footer__inner-forclients-title">For clients</div>
+              <div class="footer__inner-forclients-item">Support</div>
+              <div class="footer__inner-forclients-item">Contacts</div>
+              <div class="footer__inner-forclients-item">Legal information</div>
+              <div class="footer__inner-forclients-item">About Us</div>
+            </div>
+            <div class="footer__inner-paymentmethods">
+              <div class="footer__inner-paymentmethods-title">Payment Methods</div>
+              <div class="footer__inner-paymentmethods-inner">
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/visa-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/master-card-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/american-express-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/pay-pal-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/apple-pay-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                  <img src="assets/images/google-pay-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                    <img src="assets/images/visa-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                    <img src="assets/images/visa-footer.png" alt="">
+                </div>
+                <div class="footer__inner-paymentmethods-inner-item">
+                    <img src="assets/images/visa-footer.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="footer__inner-other">
+              <div class="footer__inner-other-stores">
+                <div class="footer__inner-other-stores-item">
+                  <img src="assets/images/app_store.png" alt="">
+                </div>
+                <div class="footer__inner-other-stores-item">
+                  <img src="assets/images/google_play.png" alt="">
+                </div>
+              </div>
+              <div class="footer__inner-other">
+                <div class="footer__inner-other-title">
+                  Share with friends
+                </div>
+                <div class="footer__inner-other-social">
+                  <div class="footer__inner-other-social-item">
+                    <img src="assets/images/svg/facebook-icon.svg" alt="">
+                  </div>
+                  <div class="footer__inner-other-social-item">
+                    <img src="assets/images/svg/twitter-icon.svg" alt="">
+                  </div>
+                  <div class="footer__inner-other-social-item">
+                    <img src="assets/images/svg/google-icon.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="footer__inner-other-join">
+                <div class="footer__inner-other-join-title">
+                  Join us
+                </div>
+                <div class="footer__inner-other-join-inner">
+                  <div class="footer__inner-other-join-inner-item">
+                    <img src="assets/images/svg/join-facebook.svg" alt="">
+                  </div>
+                  <div class="footer__inner-other-join-inner-item">
+                    <img src="assets/images/svg/join-instagram.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__info">
+            © 2020, Vidodo Guide LLP | Our policy and terms
+          </div>
+          <div class="footer__guide">
+            <div class="footer__guide-title">
+              Island guide
+            </div>
+            <img src="assets/images/footer-guide.png" alt="">
+          </div>
+          <div class="footer__message">
+            <img src="assets/images/footer-masage.png" alt="">
+          </div>
+        </div>
+    
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
